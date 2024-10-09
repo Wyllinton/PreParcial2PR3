@@ -1,6 +1,8 @@
 package co.edu.uniquindio.poo;
 
-public class Personaje {
+import java.io.Serializable;
+
+public class Personaje implements Serializable {
     private String nombre;
     private String paisNacimiento;
     private int edad;
