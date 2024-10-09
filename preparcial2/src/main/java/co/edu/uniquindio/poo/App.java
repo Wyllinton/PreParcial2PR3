@@ -16,8 +16,15 @@ public class App {
         Netflix netflix= new Netflix();
         Util util = new Util();
         Serie serie = new Serie(null, "The last one", null, null, null);
+        Personaje personaje1 = new Personaje("Juan", "Colombia", 30, null);
         netflix.agregarSerie(serie);
         gestionArchivos(netflix);
+        String archivo = "personaje.ser";
+         util.serializarObjeto(personaje1, archivo);
+         
+         // Deserializar el objeto
+         Personaje personaDeserializada = util.deserializarObjeto(archivo);
+         System.out.println("Nombre: " + personaDeserializada.getNombre() + ", Edad: " + personaDeserializada.getEdad());
 }
         private static void gestionArchivos(Netflix netflix){
         String formatoSeries = "La serie con titulo %s con codigo ";

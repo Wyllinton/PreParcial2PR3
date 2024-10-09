@@ -1,0 +1,2 @@
+Serie [codigo=null, titulo=The last one, añoInicio=null, sinopsis=null, genero=null, personajes=[]]
+
