@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
+import com.thoughtworks.xstream.XStream;
+
 /**
  * Hello world!
  *
@@ -22,7 +24,7 @@ public class App {
         String archivo = "personaje.ser";
          util.serializarObjeto(personaje1, archivo);
          
-         // Deserializar el objeto
+        // Deserializar el objeto
          Personaje personaDeserializada = util.deserializarObjeto(archivo);
          System.out.println("Nombre: " + personaDeserializada.getNombre() + ", Edad: " + personaDeserializada.getEdad());
 }

@@ -70,9 +70,6 @@ public class Util {
         return persona;
     }
 
-    public static void guardarSerializacion(){
-
-    }
 
     // Serializar un objeto en un archivo de XML
     public static void serializarObjetoXML(String nombre, Object objeto) throws IOException {
