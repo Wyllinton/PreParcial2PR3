@@ -15,6 +15,8 @@ public class App {
     
         Netflix netflix= new Netflix();
         Util util = new Util();
+        Serie serie = new Serie(null, "The last one", null, null, null);
+        netflix.agregarSerie(serie);
         gestionArchivos(netflix);
 }
         private static void gestionArchivos(Netflix netflix){
@@ -32,8 +34,8 @@ public class App {
         // Directorio
         File directorio = new File("Resources");
         //Creación de los archivos txt
-        File archivoSeries = new File("Reportes_Java/Series.txt");
-        File archivoPersonajes = new File("Reportes_Java/Personajes.txt");
+        File archivoSeries = new File("Resources/Series.txt");
+        File archivoPersonajes = new File("Resources/Personajes.txt");
         //Comprobación de la existencia del directorio
         if (!directorio.exists()) {
             if (directorio.mkdir()) {

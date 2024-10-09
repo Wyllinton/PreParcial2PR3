@@ -12,4 +12,8 @@ public class Netflix {
     public ArrayList<Serie> getSeries() {
         return series;
     }
+
+    public void agregarSerie(Serie serie){
+        series.add(serie);
+    }
 }
